@@ -1,0 +1,32 @@
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.npmrc
+*credentials*.json
+*tokens*.json
+.local/
+
+# Installed dependencies and generated output
+node_modules/
+.next/
+dist/
+build/
+out/
+.build/
+coverage/
+*.log
+*.tsbuildinfo
+playwright-report/
+test-results/
+artifacts/
+
+# Private agent/workspace state
+.omp/
+.agents/
+.superpowers/
+.worktrees/
+.impeccable/
+.DS_Store

@@ -1,0 +1,94 @@
+/* LeadDesk design tokens — single source for colour, type, spacing, radius and motion.
+   Brand references come from the approved logo kit (assets/brand/GUIDELINES.source.md).
+   Teal is the only action colour. Clay is reserved for the logo artwork and tiny
+   non-text accents (contrast 4.39:1 on Paper — never used for body copy). */
+:root {
+  color-scheme: light;
+
+  /* Brand */
+  --c-teal: #0F6656;          /* primary action, focus, links — 6.9:1 on white */
+  --c-teal-hover: #0B5245;
+  --c-teal-press: #093F35;
+  --c-teal-soft: #E6F0ED;     /* selected / user bubble ground */
+  --c-teal-soft-2: #C9E0D8;   /* focus halo, selected border */
+  --c-clay: #C3502E;          /* decorative accent only */
+  --c-paper: #FAF8F3;         /* logo clear-space reference; not a page ground */
+
+  /* Neutrals (cool, brand-derived from Ink) */
+  --c-ink: #142C27;           /* primary text — 14.6:1 on white */
+  --c-ink-2: #3D504B;         /* secondary text — 8.4:1 on white */
+  --c-ink-3: #56665F;         /* tertiary/meta text — 6.0:1 on white, 5.5:1 on surface */
+  --c-bg: #FFFFFF;
+  --c-surface: #F4F6F5;
+  --c-surface-2: #EAEFED;
+  --c-line: #DCE3E0;
+  --c-line-strong: #B9C5C1;
+  --c-disabled-bg: #D3DBD8;
+  --c-disabled-fg: #47554F;   /* 5.0:1 on disabled bg */
+
+  /* Status — each always paired with an icon and a text label */
+  --c-ok: #1C6638;  --c-ok-bg: #E7F2EA;  --c-ok-line: #B5D6BF;
+  --c-info: #2A5185; --c-info-bg: #E9EEF7; --c-info-line: #C2D1E7;
+  --c-warn: #7A4E00; --c-warn-bg: #FBF1DC; --c-warn-line: #E8CF94;
+  --c-danger: #9F271B; --c-danger-bg: #FBEAE7; --c-danger-line: #EDBDB5;
+  --c-neutral: #3D504B; --c-neutral-bg: #EEF2F0; --c-neutral-line: #D3DCD8;
+
+  --c-focus: #0F6656;
+  --c-scrim: rgba(20, 44, 39, 0.42);
+
+  /* Type */
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", system-ui, -apple-system, Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Charter", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --fs-xs: 13px;   /* metadata only */
+  --fs-sm: 14px;   /* labels, helper text, dense admin cells */
+  --fs-md: 16px;   /* body */
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  --fs-3xl: 36px;
+  --lh-tight: 1.25;
+  --lh-snug: 1.4;
+  --lh-body: 1.6;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* Spacing — 4/8 rhythm */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
+  /* Shape */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-xl: 18px;
+  --r-pill: 999px;
+  --shadow-1: 0 1px 2px rgba(20, 44, 39, 0.06), 0 1px 1px rgba(20, 44, 39, 0.04);
+  --shadow-2: 0 12px 32px rgba(20, 44, 39, 0.14), 0 2px 8px rgba(20, 44, 39, 0.06);
+
+  /* Motion — state feedback only */
+  --dur-fast: 160ms;
+  --dur-med: 240ms;
+  --dur-exit: 160ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in: cubic-bezier(0.5, 0, 0.75, 0);
+
+  /* Layout */
+  --header-h: 72px;
+  --aside-w: 360px;
+  --sidebar-w: 248px;
+  --measure: 736px;
+  --logo-w: 192px;           /* approved minimum for the horizontal lockup */
+  --logo-h: 49px;            /* 192 × 256 / 995 */
+}

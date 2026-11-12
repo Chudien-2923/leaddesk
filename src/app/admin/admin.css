@@ -1,0 +1,11 @@
+.adm .dl dd, .adm .mono, .adm .row-title, .adm .row-meta, .adm .notice, .adm .release-name { overflow-wrap: anywhere; min-width: 0; }
+.adm .md-list, .adm .md-detail, .adm .release-card, .adm .form { min-width: 0; }
+.adm .form fieldset:disabled { opacity: .75; }
+.admin-document-actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.admin-validation { scroll-margin-top: var(--sp-6); }
+.admin-policy-fixed { padding: var(--sp-4); background: var(--c-surface); border-radius: var(--r-md); }
+.admin-document-list { display: grid; gap: var(--sp-3); }
+.adm .textarea.code { min-height: 320px; }
+.adm .form > fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.adm .admin-policy-fixed .dl-row { grid-template-columns: minmax(110px, 40%) minmax(0, 1fr); }
+@media (max-width: 600px) { .adm .field-row { grid-template-columns: minmax(0, 1fr); } }

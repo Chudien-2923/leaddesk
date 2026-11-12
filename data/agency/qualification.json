@@ -1,0 +1,27 @@
+{
+  "version": "leaddesk-en-2026-11-12",
+  "services": {
+    "meta_ads": {
+      "title": "Meta Ads management",
+      "managementMonthlyVnd": 5000000,
+      "minimumMediaMonthlyVnd": 10000000,
+      "requiresWebsite": false
+    },
+    "google_ads": {
+      "title": "Google Ads management",
+      "managementMonthlyVnd": 6000000,
+      "minimumMediaMonthlyVnd": 15000000,
+      "requiresWebsite": true
+    }
+  },
+  "timelineDays": 90,
+  "booking": {
+    "timeZone": "Asia/Ho_Chi_Minh",
+    "durationMinutes": 30,
+    "gridMinutes": 30,
+    "leadHours": 24,
+    "horizonDays": 14,
+    "weekdays": [1, 2, 3, 4, 5],
+    "workingBlocks": [["09:00", "12:00"], ["13:00", "17:00"]]
+  }
+}
